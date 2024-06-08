@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#111111</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <color name="soft_green">#A7C957</color>
+    <color name="soft_blue">#61A5C2</color>
+    <color name="mediumm_green">#6A994E</color>
+    <color name="dark_green">#386641</color>
+
+    <color name="creamy_white">#F2E8CF</color>
+    <color name="soft_pink">#F28482</color>
+    <color name="medium_pink">#BC4749</color>
+
+    <color name="soft_grey">#999999</color>
+    <color name="dark_grey">#666666</color>
+
+
+</resources>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Kicau Mania</string>
+
+    <string name="greetings_onboarding">Halo selamat datang Kicau Mania</string>
+
+    <string name="greetings_description_onboarding">Makasih udah pakai aplikasi dari Kelompok kami, Aplikasi ini dibuat untuk memenuhi tugas Kecerdasan Buatan</string>
+
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">Sudah mempunyai Akun?</string>
+    <string name="create_new_account">Create an new account?</string>
+    <string name="lupa_kata_sandi">Lupa kata sandi</string>
+
+    <!--Login & Register-->
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register_description_greetings">Gunakan username, email dan password dengan benar ya, Password maksimal 6 karakter dan username 10 karakter</string>
+    <string name="login_description_greetings">Selamat datang kembali, Gunakan username dan password dengan benar ya, maaf kalau ada BUG hehe</string>
+    <string name="register_greetings">Membuat Akun</string>
+    <string name="login_greetings">Welcome Back!</string>
+
+    <!---Home Menu-->
+    <string name="smart_camera">Kamera Pintar</string>
+    <string name="jual">Jual</string>
+    <string name="beli">Beli</string>
+    <string name="lomba">Lomba</string>
+
+    <!--Bottom Navigation Item-->
+    <string name="home">Home</string>
+    <string name="profile">Explore</string>
+    <string name="setting">Setting</string>
+
+</resources>
