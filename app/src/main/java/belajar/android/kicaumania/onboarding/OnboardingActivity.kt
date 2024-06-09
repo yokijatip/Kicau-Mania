@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import belajar.android.kicaumania.R
 import belajar.android.kicaumania.databinding.ActivityOnboardingBinding
 import belajar.android.kicaumania.login.LoginActivity
+import belajar.android.kicaumania.register.RegisterActivity
 
 class OnboardingActivity : AppCompatActivity() {
 
@@ -32,7 +33,7 @@ class OnboardingActivity : AppCompatActivity() {
             }
 
             btnRegister.setOnClickListener {
-                startActivity(Intent(this@OnboardingActivity, LoginActivity::class.java))
+                startActivity(Intent(this@OnboardingActivity, RegisterActivity::class.java))
                 finish()
             }
         }
