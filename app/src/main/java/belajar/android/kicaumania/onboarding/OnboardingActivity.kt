@@ -1,5 +1,6 @@
 package belajar.android.kicaumania.onboarding
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import belajar.android.kicaumania.R
 import belajar.android.kicaumania.databinding.ActivityOnboardingBinding
+import belajar.android.kicaumania.login.LoginActivity
 
 class OnboardingActivity : AppCompatActivity() {
 
@@ -21,6 +23,18 @@ class OnboardingActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        binding.apply {
+            btnLogin.setOnClickListener {
+                startActivity(Intent(this@OnboardingActivity, LoginActivity::class.java))
+                finish()
+            }
+
+            btnRegister.setOnClickListener {
+                startActivity(Intent(this@OnboardingActivity, LoginActivity::class.java))
+                finish()
+            }
         }
 
 
