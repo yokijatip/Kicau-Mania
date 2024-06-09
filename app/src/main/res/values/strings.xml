@@ -31,4 +31,30 @@
     <string name="profile">Explore</string>
     <string name="setting">Setting</string>
 
+    <string-array name="bird_item_title">
+        <item name="bird_title_1">Parkit</item>
+        <item name="bird_title_2">Lovebird</item>
+        <item name="bird_title_3">Kenari Atlantik</item>
+        <item name="bird_title_4">Cockatiel</item>
+        <item name="bird_title_5">Merpati Balap / Japati</item>
+        <item name="bird_title_6">Nuri</item>
+        <item name="bird_title_7">Condet</item>
+        <item name="bird_title_8">Muray</item>
+        <item name="bird_title_9">Merpati Hitam</item>
+        <item name="bird_title_0">Burung Parsha</item>
+    </string-array>
+
+    <string-array name="bird_item_category">
+        <item name="bird_category_1">Burung Hias</item>
+        <item name="bird_category_2">Burung Kicau</item>
+        <item name="bird_category_3">Burung Kicau</item>
+        <item name="bird_category_4">Burung Hias</item>
+        <item name="bird_category_5">Burung Lomba</item>
+        <item name="bird_category_6">Burung Hias</item>
+        <item name="bird_category_7">Burung Kicau</item>
+        <item name="bird_category_8">Burung Kicau</item>
+        <item name="bird_category_9">Burung Lomba</item>
+        <item name="bird_category_10">Burung Mage</item>
+    </string-array>
+
 </resources>
