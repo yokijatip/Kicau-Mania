@@ -2,24 +2,15 @@
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/motionLayout"
+    android:id="@+id/motion_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     app:layoutDescription="@xml/activity_splash_scene"
     tools:context=".splash.SplashActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/background_layout"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@drawable/splash_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
-        android:id="@+id/color_app_icons"
+        android:id="@+id/color_app_icon"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:src="@drawable/app_icons"
@@ -28,16 +19,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/white_app_icons"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/app_icons"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_bird"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/white" />
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/splah_bird" />
 
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

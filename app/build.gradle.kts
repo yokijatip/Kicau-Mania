@@ -135,6 +135,9 @@ dependencies {
     // Circle Image dari Hodenhof
     implementation("de.hdodenhof:circleimageview:3.1.0")
 
+    // Motion Layout
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha13")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

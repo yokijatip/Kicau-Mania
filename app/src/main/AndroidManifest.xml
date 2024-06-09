@@ -13,12 +13,6 @@
         android:theme="@style/Theme.KicauMania"
         tools:targetApi="31">
         <activity
-            android:name=".onboarding.OnboardingActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".profile.ProfileActivity"
-            android:exported="false" />
-        <activity
             android:name=".splash.SplashActivity"
             android:exported="true">
             <intent-filter>
@@ -28,8 +22,23 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".onboarding.OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
     </application>
 
 </manifest>
+
+    <!--Buat Launcer-->
+    <!--
+<intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+-->

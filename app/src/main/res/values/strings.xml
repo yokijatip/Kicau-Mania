@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Kicau Mania</string>
 
-    <string name="greetings_onboarding">Halo selamat datang Kicau Mania</string>
+    <string name="greetings_onboarding">Halo selamat datang\nKicau Mania</string>
 
     <string name="greetings_description_onboarding">Makasih udah pakai aplikasi dari Kelompok kami, Aplikasi ini dibuat untuk memenuhi tugas Kecerdasan Buatan</string>
 
