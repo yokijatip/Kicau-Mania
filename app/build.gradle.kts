@@ -44,6 +44,8 @@ android {
 
 dependencies {
 
+    implementation(libs.androidx.legacy.support.v4)
+    implementation(libs.androidx.fragment.ktx)
     val lottieVersion = "6.2.0"
     //noinspection UseTomlInstead
     implementation("com.airbnb.android:lottie:$lottieVersion")

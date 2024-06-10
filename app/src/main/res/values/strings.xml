@@ -28,7 +28,7 @@
 
     <!--Bottom Navigation Item-->
     <string name="home">Home</string>
-    <string name="profile">Explore</string>
+    <string name="explore">Explore</string>
     <string name="setting">Setting</string>
 
     <string-array name="bird_item_title">

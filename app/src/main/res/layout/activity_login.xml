@@ -27,37 +27,6 @@
         app:layout_constraintStart_toStartOf="@+id/guideline_start"
         app:layout_constraintTop_toTopOf="@+id/guideline_top" />
 
-    <!-- Title & Desc -->
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/guideline_end"
-        app:layout_constraintStart_toStartOf="@+id/guideline_start"
-        app:layout_constraintTop_toBottomOf="@+id/btn_back">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/inter_bold"
-            android:maxLines="1"
-            android:text="@string/login_greetings"
-            android:textColor="@color/black"
-            android:textSize="28sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/inter_reguler"
-            android:text="@string/login_description_greetings"
-            android:textColor="#4A4A4A"
-            android:textSize="14sp" />
-
-    </LinearLayout>
-
     <!-- Form Login -->
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -68,6 +37,16 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline_end"
         app:layout_constraintStart_toStartOf="@+id/guideline_start"
         app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:maxLines="1"
+            android:layout_marginBottom="40dp"
+            android:text="@string/login_greetings"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
