@@ -36,6 +36,11 @@ class RegisterActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }
+
+            btnRegister.setOnClickListener {
+                startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
+                finish()
+            }
         }
     }
 }

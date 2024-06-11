@@ -2,8 +2,10 @@
     <string name="app_name">Kicau Mania</string>
 
     <string name="greetings_onboarding">Halo selamat datang\nKicau Mania</string>
-
     <string name="greetings_description_onboarding">Makasih udah pakai aplikasi dari Kelompok kami, Aplikasi ini dibuat untuk memenuhi tugas Kecerdasan Buatan</string>
+
+    <string name="greetings_home_1">Find and Sell Your</string>
+    <string name="greetings_home_2">Dream Bird Here</string>
 
     <string name="login">Login</string>
     <string name="register">Register</string>

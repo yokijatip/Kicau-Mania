@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import belajar.android.kicaumania.MainActivity
 import belajar.android.kicaumania.R
 import belajar.android.kicaumania.databinding.ActivityLoginBinding
 import belajar.android.kicaumania.onboarding.OnboardingActivity
@@ -36,6 +37,11 @@ class LoginActivity : AppCompatActivity() {
             btnRegister.setOnClickListener {
                 val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
                 startActivity(intent)
+                finish()
+            }
+
+            btnLogin.setOnClickListener {
+                startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                 finish()
             }
         }
