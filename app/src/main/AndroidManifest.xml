@@ -20,6 +20,15 @@
             android:exported="false" />
         <activity
             android:name=".splash.SplashActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".onboarding.OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
 
             <intent-filter>
@@ -29,15 +38,6 @@
             </intent-filter>
 
         </activity>
-        <activity
-            android:name=".onboarding.OnboardingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".profile.ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"/>
     </application>
 
 </manifest>
