@@ -33,6 +33,8 @@
     <string name="explore">Explore</string>
     <string name="setting">Setting</string>
 
+    <string name="bird_item_heading">BURUNG POPULER</string>
+
     <string-array name="bird_item_title">
         <item name="bird_title_1">Parkit</item>
         <item name="bird_title_2">Lovebird</item>
@@ -43,7 +45,7 @@
         <item name="bird_title_7">Condet</item>
         <item name="bird_title_8">Muray</item>
         <item name="bird_title_9">Merpati Hitam</item>
-        <item name="bird_title_0">Burung Parsha</item>
+        <item name="bird_title_10">Burung Parsha</item>
     </string-array>
 
     <string-array name="bird_item_category">

@@ -22,6 +22,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        mlModelBinding = true
     }
 
     buildTypes {
@@ -139,6 +140,20 @@ dependencies {
 
     // Motion Layout
     implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha13")
+
+    // Camera X
+    val cameraXversion = "1.2.2"
+    implementation("androidx.camera:camera-core:$cameraXversion")
+    implementation("androidx.camera:camera-camera2:$cameraXversion")
+    implementation("androidx.camera:camera-lifecycle:$cameraXversion")
+    implementation("androidx.camera:camera-video:$cameraXversion")
+    implementation("androidx.camera:camera-view:$cameraXversion")
+    implementation("androidx.camera:camera-extensions:$cameraXversion")
+
+    // Tensor Flow Lite
+    implementation("org.tensorflow:tensorflow-lite-metadata:0.1.0")
+    implementation("org.tensorflow:tensorflow-lite-support:0.1.0")
+    implementation ("org.tensorflow:tensorflow-lite:2.8.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
