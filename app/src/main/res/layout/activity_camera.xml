@@ -161,7 +161,7 @@
             android:src="@drawable/ic_open_gallery"
             android:textSize="15sp"
             app:cornerRadius="8dp"
-            app:rippleColor="@color/dark_grey"
+            app:rippleColor="@color/white"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
