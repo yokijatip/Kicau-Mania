@@ -135,6 +135,7 @@
             android:text="AI Camera"
             android:textAlignment="center"
             android:textSize="12sp" />
+
     </LinearLayout>
 
     <!-- Buy Button -->

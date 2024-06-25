@@ -61,4 +61,6 @@
         <item name="bird_category_10">Burung Mage</item>
     </string-array>
 
+    <string name="camera_title_find_manuk">Cari Manuk</string>
+
 </resources>
