@@ -3,6 +3,7 @@ package belajar.android.kicaumania.home.camera
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
@@ -20,6 +21,9 @@ import androidx.core.view.WindowInsetsCompat
 import belajar.android.kicaumania.R
 import belajar.android.kicaumania.databinding.ActivityCameraBinding
 import belajar.android.kicaumania.home.camera.OpenCameraActivity.Companion.CAMERAX_RESULT
+import belajar.android.kicaumania.ml.Manuk
+import org.tensorflow.lite.support.image.TensorImage
+
 
 class CameraActivity : AppCompatActivity() {
 
@@ -84,6 +88,8 @@ class CameraActivity : AppCompatActivity() {
             val bitmap = BitmapFactory.decodeStream(contentResolver.openInputStream(it))
             binding.ivManuk.setImageBitmap(bitmap)
             //  Prediction nya simpan disini dan dijalankan disini
+            outputGenerator(bitmap)
+
         }
     }
     //    Permission Gallery END
@@ -117,6 +123,41 @@ class CameraActivity : AppCompatActivity() {
                 finish()
             }
         }
+    }
+
+    //    Output
+    private fun outputGenerator(bitmap: Bitmap) {
+//        Deklarasi Tensorflow lite Model
+
+        val birdModel = Manuk.newInstance(this@CameraActivity)
+
+//        Convert Bitmap to TensorFlow Image
+        val newBitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true)
+        val tfImage = TensorImage.fromBitmap(newBitmap)
+
+//        Runs model inference and gets result.
+        val outputs = birdModel.process(tfImage)
+            .probabilityAsCategoryList.apply {
+                sortByDescending {
+                    it.score
+                }
+            }
+        val highProbability = outputs[0]
+
+
+//        Setting Output Text
+        binding.tvManuk.text = highProbability.label
+        Log.i("TAG", "Output Generator : $highProbability")
+
+//        Untuk Direct Search ke Google
+        val outpuText = highProbability.label
+        binding.btnFind.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=$outpuText"))
+            startActivity(intent)
+        }
+
+//        Release model resource jika tidak digunakan
+        birdModel.close()
     }
 
 

@@ -47,6 +47,10 @@ dependencies {
 
     implementation(libs.androidx.legacy.support.v4)
     implementation(libs.androidx.fragment.ktx)
+    implementation(libs.tensorflow.lite.support)
+    implementation(libs.tensorflow.lite.metadata)
+
+    implementation ("org.tensorflow:tensorflow-lite:2.8.0")
     val lottieVersion = "6.2.0"
     //noinspection UseTomlInstead
     implementation("com.airbnb.android:lottie:$lottieVersion")
@@ -151,9 +155,13 @@ dependencies {
     implementation("androidx.camera:camera-extensions:$cameraXversion")
 
     // Tensor Flow Lite
-    implementation("org.tensorflow:tensorflow-lite-metadata:0.1.0")
-    implementation("org.tensorflow:tensorflow-lite-support:0.1.0")
-    implementation ("org.tensorflow:tensorflow-lite:2.8.0")
+//    val tensorFlowVersion = "2.8.0"
+//    //noinspection UseTomlInstead
+//    implementation("org.tensorflow:tensorflow-lite-metadata:0.1.0")
+//    //noinspection UseTomlInstead
+//    implementation("org.tensorflow:tensorflow-lite-support:$tensorFlowVersion")
+//    //noinspection UseTomlInstead
+//    implementation("org.tensorflow:tensorflow-lite:$tensorFlowVersion")
 
 
     implementation(libs.androidx.core.ktx)

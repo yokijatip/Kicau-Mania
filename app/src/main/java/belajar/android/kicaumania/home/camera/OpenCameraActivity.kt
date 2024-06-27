@@ -58,11 +58,6 @@ class OpenCameraActivity : AppCompatActivity() {
         startCamera()
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        cameraExecutor.shutdown()
-    }
-
     //    Start Camera X
     private fun startCamera() {
         val cameraProviderFuture = ProcessCameraProvider.getInstance(this)
